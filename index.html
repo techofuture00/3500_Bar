@@ -4,12 +4,63 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Demo form</title>
+	
+	<script type="text/javascript">
+	  function cal(val) {
+	  	  var AE,zzz, a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,aa,ab,ac,ad;
+	  	   
+	 		a= document.getElementById('inp1').value;
+	 		b= document.getElementById("inp2").value;
+      c= document.getElementById('inp3').value;
+      d= document.getElementById("inp4").value;
+      e= document.getElementById('inp5').value;
+      f= document.getElementById("inp6").value;
+      g= document.getElementById('inp7').value;
+      h= document.getElementById("inp8").value;
+      i= document.getElementById('inp9').value;
+      j= document.getElementById("inp10").value;
+      k= document.getElementById('inp11').value;
+      l= document.getElementById("inp12").value;
+      m= document.getElementById('inp13').value;
+      n= document.getElementById("inp14").value;
+      o= document.getElementById('inp15').value;
+      p= document.getElementById("inp16").value;
+      q= document.getElementById('inp17').value;
+      r= document.getElementById("inp18").value;
+      s= document.getElementById('inp19').value;
+      t= document.getElementById("inp20").value;
+      u= document.getElementById('inp21').value;
+      v= document.getElementById("inp22").value;
+      w= document.getElementById('inp23').value;
+      x= document.getElementById("inp24").value;
+      y= document.getElementById('inp25').value;
+      z= document.getElementById("inp26").value;
+      aa= document.getElementById('inp27').value;
+      ab= document.getElementById("inp28").value;
+      ac= document.getElementById('inp29').value;
+      ad= document.getElementById("inp30").value;
+
+	 		AE= document.getElementById("operation").value;
+
+			if (AE!==""){
+
+					zzz= (+a)+(+b)+(+c)+(+d)+(+e)+(+f)+(+g)+(+h)+(+i)+(+j)+(+k)+(+l)+(+m)+(+n)+(+o)+(+p)+(+q)+(+r)+(+s)+(+t)+(+u)+(+v)+(+w)+(+x)+(+y)+(+z)+(+aa)+(+ab)+(+ac)+(+ad);
+						document.getElementById("res").value= zzz;
+						}  
+			if(AE==""){ 
+					zzz= "Business Name is Empty";
+						document.getElementById("res").value= zzz;}
+ }
+</script>
+	
 </head>
 <body>
+  <h1 align="center">3500 Bar Order Form</h1>
 	<form action="https://docs.google.com/forms/d/e/1FAIpQLSfc-ul7vcAhRLT6KEUzUi36aIe73d_ap0ZbNNurMCMysYPb8Q/formResponse">
-		<h2>Business Name<input type="text" name="entry.399529387"></h2>
+		
+		<h2 align="center">Business Name<input type="text" name="entry.399529387" id="operation" onchange="cal(this.value);"></h2>
 
-<table border="0">
+<table border="1" align="center">
     <font size="4">
     <tr><td align="left">First Name </th><th><input type="text" name="entry.1098861488"></th></tr>
 
@@ -20,68 +71,71 @@
 </table>
 
 
-<table border="0">
-	<font size="4">
+<table border="1" align="center">
+  <font size="4">
 	<tr>
-		<th></th>
+		<th>Flavour list</th>
 		<th>Quantity</th>
 	</tr>
-    <tr><td align="left">Banana ice</th><th><input type="text" name="entry.638972372"></th></tr> 
-    <tr><td align="left">Banana Pog Cherry</th><th><input type="text" name="entry.1106053329"></th></tr>
-    <tr><td align="left">Blackberry</th><th><input type="text" name="entry.522163855"></th></tr>
-    <tr><td align="left">BlackBerry Ras Lemon</th><th><input type="text" name="entry.1154660056"></th></tr>
-    <tr><td align="left">Blueberry</th><th><input type="text" name="entry.699346094"></th></tr>    
-    <tr><td align="left">Blueberry Raspberry</th><th><input type="text" name="entry.1434826245"></th></tr>
-    <tr><td align="left">Cherry Blueberry</th><th><input type="text" name="entry.1794518138"></th></tr>    
-    <tr><td align="left">Cherry Pog </th><th><input type="text" name="entry.1078846623"></th></tr>    
-    <tr><td align="left">Cola</th><th> <input type="text" name="entry. 1560623073"> </th></tr>    
-   <tr><td align="left">Double Apple</th><th> <input type="text" name="entry. 1208328045"> </th></tr>   
-   <tr><td align="left">Grape</th><th> <input type="text" name="entry. 1675188109"> </th></tr>   
-   <tr><td align="left">Ice Cream </th><th> <input type="text" name="entry. 1687184356"> </th></tr>   
-   <tr><td align="left">Lush Ice</th><th> <input type="text" name="entry. 909030509"> </th></tr>   
-   <tr><td align="left">Mango</th><th> <input type="text" name="entry. 1364328216"> </th></tr>
-   <tr><td align="left">Melon</th><th> <input type="text" name="entry. 525755243"> </th></tr>
-   <tr><td align="left">Mixed Berry</th><th> <input type="text" name="entry. 1511463773"> </th></tr>
-   <tr><td align="left">Orange Mango Pineapple</th><th> <input type="text" name="entry. 1589168877"> </th></tr>
-   <tr><td align="left">passion Fruit Mango Lime</th><th> <input type="text" name="entry. 503109065"> </th></tr>
-   <tr><td align="left">Passion Fruit Watermelon</th><th> <input type="text" name="entry. 1784683867"> </th></tr>
-   <tr><td align="left">Peach</th><th> <input type="text" name="entry. 515495405"> </th></tr>
+    <tr><td align="left">Banana ice</th><th><input type="text" name="entry.638972372" id="inp1" onkeyup="cal();"></th></tr> 
+	
+	
+    <tr><td align="left">Banana Pog Cherry</th><th><input type="text" name="entry.1106053329" id="inp2" onkeyup="cal();"></th></tr>
+    <tr><td align="left">Blackberry</th><th><input type="text" name="entry.522163855" id="inp3" onkeyup="cal();"></th></tr>
+    <tr><td align="left">BlackBerry Ras Lemon</th><th><input type="text" name="entry.1154660056" id="inp4" onkeyup="cal();"></th></tr>
+    <tr><td align="left">Blueberry</th><th><input type="text" name="entry.699346094" id="inp5" onkeyup="cal();"></th></tr>    
+    <tr><td align="left">Blueberry Raspberry</th><th><input type="text" name="entry.1434826245" id="inp6" onkeyup="cal();"></th></tr>
+    <tr><td align="left">Cherry Blueberry</th><th><input type="text" name="entry.1794518138" id="inp7" onkeyup="cal();"></th></tr>    
+    <tr><td align="left">Cherry Pog </th><th><input type="text" name="entry.1078846623" id="inp8" onkeyup="cal();"></th></tr>    
+    <tr><td align="left">Cola</th><th><input type="text" name="entry.1560623073" id="inp9" onkeyup="cal();"> </th></tr>    
+   <tr><td align="left">Double Apple</th><th> <input type="text" name="entry.1208328045" id="inp10" onkeyup="cal();"> </th></tr>   
+   <tr><td align="left">Grape</th><th> <input type="text" name="entry.1675188109" id="inp11" onkeyup="cal();"> </th></tr>   
+   <tr><td align="left">Ice Cream </th><th> <input type="text" name="entry.1687184356" id="inp12" onkeyup="cal();"> </th></tr>   
+   <tr><td align="left">Lush Ice</th><th> <input type="text" name="entry.909030509" id="inp13" onkeyup="cal();"> </th></tr>   
+   <tr><td align="left">Mango</th><th> <input type="text" name="entry.1364328216" id="inp14" onkeyup="cal();"> </th></tr>
+   <tr><td align="left">Melon</th><th> <input type="text" name="entry.525755243" id="inp15" onkeyup="cal();"> </th></tr>
+   <tr><td align="left">Mixed Berry</th><th> <input type="text" name="entry.1511463773" id="inp16" onkeyup="cal();"> </th></tr>
+   <tr><td align="left">Orange Mango Pineapple</th><th> <input type="text" name="entry.1589168877" id="inp17" onkeyup="cal();"> </th></tr>
+   <tr><td align="left">passion Fruit Mango Lime</th><th> <input type="text" name="entry.503109065" id="inp18" onkeyup="cal();"> </th></tr>
+   <tr><td align="left">Passion Fruit Watermelon</th><th> <input type="text" name="entry.1784683867" id="inp19" onkeyup="cal();"> </th></tr>
+   <tr><td align="left">Peach</th><th> <input type="text" name="entry.515495405" id="inp20" onkeyup="cal();"> </th></tr>
 
-   <tr><td align="left">Pineapple</th><th> <input type="text" name="entry. 2014905672"> </th></tr>
+   <tr><td align="left">Pineapple</th><th> <input type="text" name="entry.2014905672" id="inp21" onkeyup="cal();"> </th></tr>
 
-   <tr><td align="left">Strawberry Kiwi</th><th> <input type="text" name="entry. 39707737"> </th></tr>
+   <tr><td align="left">Strawberry Kiwi</th><th> <input type="text" name="entry.39707737" id="inp22" onkeyup="cal();"> </th></tr>
 
-   <tr><td align="left">Strawberry Lemon</th><th> <input type="text" name="entry. 1029940244"> </th></tr>
+   <tr><td align="left">Strawberry Lemon</th><th> <input type="text" name="entry.1029940244" id="inp23" onkeyup="cal();"> </th></tr>
 
-   <tr><td align="left">Strawberry Raspberry</th><th> <input type="text" name="entry. 1658658659"> </th></tr>
+   <tr><td align="left">Strawberry Raspberry</th><th> <input type="text" name="entry.1658658659" id="inp24" onkeyup="cal();"> </th></tr>
 
-   <tr><td align="left">Strawberry Watermelon</td><th> <input type="text" name="entry. 1774624480"> </th></tr>
-
-
-
-
+   <tr><td align="left">Strawberry Watermelon</td><th> <input type="text" name="entry.1774624480" id="inp25" onkeyup="cal();"> </th></tr>
 
 
-   <tr><td align="left">Watermelon Mint Ice</th><th> <input type="text" name="entry.1633502982"> </th></tr>
 
-   <tr><td align="left">Blackberry Pog Cherry</th><th> <input type="text" name="entry.1198787713"> </th></tr>
 
-   <tr><td align="left">Passion Fruit Kiwi Guava</th><th> <input type="text" name="entry.1402537428"> </th></tr>
 
-   <tr><td align="left">Raspberry Grape</th><th> <input type="text" name="entry.802328103"> </th></tr>
 
-   <tr><td align="left">Kiwi Pineapple Ice</th><th> <input type="text" name="entry.1628841462"> </th></tr>
+   <tr><td align="left">Watermelon Mint Ice</th><th> <input type="text" name="entry.1633502982" id="inp26" onkeyup="cal();"> </th></tr>
+
+.
+   <tr><td align="left">Blackberry Pog Cherry</th><th> <input type="text" name="entry.1198787713" id="inp27" onkeyup="cal();"> </th></tr>
+
+   <tr><td align="left">Passion Fruit Kiwi Guava</th><th> <input type="text" name="entry.1402537428"id="inp28" onkeyup="cal();"> </th></tr>
+
+   <tr><td align="left">Raspberry Grape</th><th> <input type="text" name="entry.802328103" id="inp29" onkeyup="cal();"> </th></tr>
+
+   <tr><td align="left">Kiwi Pineapple Ice</th><th> <input type="text" name="entry.1628841462"id="inp30" onkeyup="cal();"> </th></tr>
 
 
 </font>
 </table>
-		<button type="submit" style="background-color:red;"><b><font size="4">Submit Order</font></b> </button>
-                
-            	
+<CENTER>
+		<tr><button type="submit" style="background-color:red;"><b><font size="4">Submit Order</font></b> </button>
+        </tr>        
+     
 
 </form>
-Total:<input type="text" name="entry.1628841462">
+ Total:<input type="button" name="" id="res"></CENTER>
+
 </body>
 </html>
-
-
